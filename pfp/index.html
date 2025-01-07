@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFP Maker</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" /> reset css -->
+</head>
+
+<body class="bg-light">
+    <div id="spinner" class="container d-none" style="max-width: 500px;">
+        <div class="row my-4 position-relative">
+            <div class="col">
+                <div class="text-center align-middle"
+                    style="position: absolute; top: 0px; left: 0px; width: 520px; height: 300px; padding: 300px 0px; background-color:rgba(255, 255, 255, 0.7); z-index: 100;">
+                    <div class="spinner-grow" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="max-width: 500px;">
+        <div class="row my-4 justify-content-between">
+            <div class="col d-flex justify-content-between">
+                <div class="d-inline-flex justify-content-start" id="partCtrls"></div>
+                <div class="btn-group d-inline-flex justify-content-end">
+                    <button id="btnDraw" type="button" class="btn btn-outline-secondary" title="Draw"><i
+                            class="bi-play-fill"></i></button>
+                    <button id="btnDL" type="button" class="btn btn-outline-secondary" title="Download"><i
+                            class="bi-box-arrow-down"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row my-4">
+      <div class="col d-flex justify-content-between">
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#props" aria-expanded="false" aria-controls="props">
+          <img src="./assets/images/props.png" width="32px" height="32px">
+        </button>
+      </div>
+    </div> -->
+        <div class="row my-4">
+            <div class="col d-flex justify-content-between">
+                <div class="w-100 border rounded" id="props"></div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <canvas id="canvas" width=500 height=500></canvas>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/fabric.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
