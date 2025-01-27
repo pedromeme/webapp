@@ -24,7 +24,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -46,7 +47,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#culture">Culture</a></li>
-          <li><a href="#hero" class="active">Pedro<br></a></li>
+          <li><a href="#story" class="active">Story<br></a></li>
           <li><a href="#pedronomics">Pedronomics</a></li>
           <li><a href="#buy">How to Buy</a></li>
         </ul>
@@ -62,10 +63,10 @@
 
     <!-- Roadmap-->
     <section class="roadmap section dark-background position-relative p-0 text-center" id="culture">
-      <div class="container-fluid px-0">
+      <!-- <div class="container-fluid px-0">
         <video class="w-100 h-100 object-cover" muted autoplay="" loop="" playsinline=""><source src="assets/video/pedro_billboard.mp4" type="video/mp4"></video>
       </div>
-      <div class="container-fluid px-0 position-absolute top-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7);"></div>
+      <div class="container-fluid px-0 position-absolute top-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
       <div class="container-fluid position-absolute top-0 d-flex justify-content-center align-items-center h-100" data-aos="fade-up">
         <div>
           <h1 class="culture-title">Billion Dollar Culture</h1>
@@ -81,39 +82,78 @@
             <span class="px-2 border-none border-start">Join the Movement</span>
           </button>
         </div>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- ALT DESIGN -->
+      <div class="container d-flex vstack justify-content-between" style="min-height: 1000px; max-width: 1024px; background-image: url(assets/img/culture/pedro-culture.jpg); background-repeat: no-repeat; background-size: contain; background-position: top;">
+        <div class="row gy-4">
+          <div class="col">
+            <h1 class="culture-title">Billion Dollar Culture</h1>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col">
+            <div id="content" class="standout">
+              It is a Movement.
+              <br/><br/>
+              A call to action for the bold, the creative, and the consistent.
+              <br/><br/>
+              A chance to be a part of something bigger.
+              <br/><br/>
+              <button class="btn border-dark mt-4" target="_blank" href="https://jup.ag/swap/SOL-5RPdyYBgVjddFfoau9dEzVwwBMjA727EPFVdPJVjpump">
+                <i class="bi bi-box-arrow-in-right px-2"></i>
+                <span class="px-2 border-none border-start border-dark">Join the Movement</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /Roadmap Section -->
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <!-- <div class="container text-center text-light py-3">
-        <div class="d-grid gap-1">
-          <h5 class="cp-vibrant-yellow" style="font-family: 'Roboto'; letter-spacing: 0.1rem;">
-            Study the lore. The thesis is simple.
-          </h5>
-          <div class="display-6 text-light" style="font-family: 'Bebas Neue'; letter-spacing: 0.2rem; text-transform: uppercase;">SpikeDog is</div>
-        </div>
-      </div> -->
+    <!-- <section id="story" class="hero section dark-background">
       <div class="container text-center" data-aos="zoom-out">
         <div class="row gy-4">
-          <!-- <div class="col-lg-4 col-md hero-col" style="height: 550px;">
-            <div class="p-5">Pedro, The Hugely Popular Monkey Puppet</div>
-            <img src="">
+          <div class="col-lg-6 col-md">
+            <div class="p-5 story-title">Pedro, The Hugely Popular Monkey Puppet</div>
           </div>
-          <div class="col-lg-4 col-md hero-col" style="">
+          <div class="col-lg-6 col-md">
+            <div class="swiper" id="swiper-memes">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/tweets/elon.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/tweets/doge.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/tweets/shib.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/tweets/xbox.png" class="w-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md">
+            <div class="swiper" id="swiper-tweets">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/hero/tweets/elon.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/hero/tweets/doge.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/hero/tweets/shib.png" class="w-100"></div>
+                <div class="swiper-slide"><img src="assets/img/hero/tweets/xbox.png" class="w-100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md">
+            <div class="p-5 story-title">AN OG Internet Meme We All Have Loved</div>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col col-md hero-col" style="">
             <div class="p-5">Now Immortalized On The Solana Blockchain</div>
             <div class="hero-img" style="height: 550px;"></div>
           </div>
-          <div class="col-lg-4 col-md hero-col" style="height: 550px;">
-            <div class="p-5">AN OG Internet Meme We All Have Loved</div>
-            <img src="">
-          </div> -->
         </div>
       </div>
 
-    </section>
+    </section> -->
     <!-- /Hero Section -->
 
     <!-- CA Section -->
@@ -375,9 +415,10 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

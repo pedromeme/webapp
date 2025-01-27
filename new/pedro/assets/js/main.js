@@ -113,16 +113,22 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
-
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
+    const swiperMemes = new Swiper('#swiper-memes', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 5000
+      },
+      effect: 'fade',
+      crossfade: true
+    });
+    const swiperTweets = new Swiper('#swiper-tweets', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: true,
+      effect: 'flip'
     });
   }
 
